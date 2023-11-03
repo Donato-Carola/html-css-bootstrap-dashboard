@@ -1,17 +1,27 @@
+
+
 nav{
     background-color: aqua;
     height: 70px;
+    border: 1px solid green;
 }
 
 header{
   background-color: black;
   width: 70px;
   height: calc(100vh - 70px);
-  
+  border: 1px solid green;
+}
+
+header>div{
+    background-color: aqua;
+    height: 25px;
+    width: 100%;
+
 }
 
 main{
-   
+    border: 1px solid green;
     width: calc(100% - 70px);
     height: calc(100vh - 70px);
     overflow: auto;
