@@ -54,7 +54,7 @@ i.fa-bell{
 
 aside{
     background-color: black;
-    width: 100px;
+    width: 70px;
     height: calc(100vh - 80px);
     
 }
@@ -76,7 +76,7 @@ aside>section  div{
 main>section.right-box{
     overflow: auto;
     
-    width: calc(100% - 100px);
+    width: calc(100% - 70px);
     height: calc(100vh - 80px);
 }
 
@@ -89,4 +89,19 @@ section.right-box>header>section>div div{
     background-color: aqua;
     height: 45px;
     border: 1px solid magenta;
+}
+
+
+
+
+
+@media all and (min-width:768px){
+    aside{
+        width: 110px;
+    }
+    
+    main>section.right-box{
+        width: calc(100% - 110px);
+    }
+     
 }
