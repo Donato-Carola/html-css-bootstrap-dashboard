@@ -1,19 +1,21 @@
 
 
-nav{
+/*nav{
     background-color: aqua;
     height: 70px;
+    width: 100vw;
     border: 1px solid green;
+  
 }
 
-header{
+aside{
   background-color: black;
   width: 70px;
   height: calc(100vh - 70px);
   border: 1px solid green;
 }
 
-header>div{
+aside>div{
     background-color: aqua;
     height: 25px;
     width: 100%;
@@ -32,3 +34,23 @@ main{
     height: 1500px;
     
 }*/
+
+
+header>section>nav{
+     height: 80px;
+     background-color: aqua;
+
+}
+
+header>section:last-child{
+    background-color: black;
+    width: 70px;
+    height: calc(100vh - 80px);
+    
+}
+
+main{
+    background-color: aquamarine;
+    width: calc(100% - 70px);
+    height: calc(100vh - 80px);
+}
