@@ -85,4 +85,8 @@ section.right-box>header{
     height: 250px;
 }
 
-
+section.right-box>header>section>div div{
+    background-color: aqua;
+    height: 45px;
+    border: 1px solid magenta;
+}
