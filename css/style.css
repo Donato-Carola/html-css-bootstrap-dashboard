@@ -42,14 +42,15 @@ header>section>nav{
 
 }
 
-header>section:last-child{
+aside{
     background-color: black;
     width: 70px;
     height: calc(100vh - 80px);
     
 }
 
-main{
+main>section{
+    overflow: auto;
     background-color: aquamarine;
     width: calc(100% - 70px);
     height: calc(100vh - 80px);
