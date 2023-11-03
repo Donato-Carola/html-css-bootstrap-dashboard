@@ -35,6 +35,7 @@ main{
     
 }*/
 
+/*CSS con header e nav*/
 
 header>section>nav{
      height: 80px;
@@ -42,16 +43,35 @@ header>section>nav{
 
 }
 
+i.fa-bell{
+    color: rgb(255, 143, 0);
+}
+
+
+
+/*CSS aside*/
+
 aside{
     background-color: black;
-    width: 70px;
+    width: 100px;
     height: calc(100vh - 80px);
     
+}
+
+section{
+    height: 100%;
+    
+}
+aside>section  div{
+    background-color: red;
+    height: 20px;
+    width: 100%;
+
 }
 
 main>section{
     overflow: auto;
     background-color: aquamarine;
-    width: calc(100% - 70px);
+    width: calc(100% - 100px);
     height: calc(100vh - 80px);
 }
