@@ -21,46 +21,45 @@
       <section>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid flex-nowrap">
+          
             <img src="" class="pe-1" alt="logo" />
-
+           
             <div class="input-group pe-1">
-              <span class="input-group-text" id="basic-addon1"
-                ><i class="fa-solid fa-magnifying-glass"></i
-              ></span>
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
               <input
                 type="text"
                 class="form-control"
                 placeholder="Username"
                 aria-label="Username"
-                aria-describedby="basic-addon1"
-              />
+                aria-describedby="basic-addon1"/>
             </div>
             <i class="fa-solid fa-bell d-lg-none"></i>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    ><i class="fa-solid fa-bars"></i
-                  ></a>
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <i class="fa-solid fa-bars"></i>
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    ><i class="fa-solid fa-circle-question"></i
-                  ></a>
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <i class="fa-solid fa-circle-question"></i>
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    ><i class="fa-solid fa-ellipsis-vertical"></i
-                  ></a>
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link active d-lg-block"
                     aria-current="page"
-                    href="#"
-                  >
-                    <i class="fa-solid fa-bell"></i
-                  ></a>
+                    href="#">
+                    <i class="fa-solid fa-bell"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -71,17 +70,67 @@
 
     <main class="d-flex">
       <!--Aside laterale nel main-->
-      <aside>
-        <section class="d-flex flex-column justify-content-between p-1 ">
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+      <aside class="text-white">
+        <section class="d-flex flex-column justify-content-between p-1 text-center pt-4 pb-4">
+          
+            <ul class="list-group lh-lg d-lg-none">
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><i class="fa-solid fa-chart-simple"></i></li>
+            <li><i class="fa-solid fa-signal"></i></li>
+          </ul>
+          
 
-          <div></div>
+       
+          <ul class="list-group d-lg-none">
+            <li><i class="fa-solid fa-gear"> </i></li>
+            
+          </ul>
+         
+           <!--CONTENUTO DELL'ASIDE CHE SCOMPARE CON D-LG-NONE , PURTROPPO NON RIESCO CON COLLAPSE-->
+      
+         
+            <ul class="list-group-item lh-lg d-none d-lg-block ">
+              <li class="w-100">
+                <i class="fa-solid fa-house text-start"></i> 
+                <span>Home</span>
+              </li> 
+            <li>
+              <i class="fa-solid fa-chart-simple text-start"></i> 
+              <span>Stats</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-signal"></i> 
+             <span>Signals</span> 
+            </li>
+            </ul>
+            
+            
+          
+
+         
+ <!--CONTENUTO DELL'ASIDE CHE SCOMPARE CON D-LG-NONE , PURTROPPO NON RIESCO CON COLLAPSE-->
+          
+          <ul class="list-group-item d-none d-lg-block">
+            <li>
+              <i class="fa-solid fa-gear"> </i>
+             <span>Admin</span>
+            </li>
+          </ul>
+            
+
+          
+        
+
         </section>
       </aside>
+
+
+
+
+
+
+
+
 
       <!-- sezione principale di destra -->
 
@@ -90,18 +139,42 @@
         <header>
           <section class="container">
             <div class="row pt-5">
-              <div class="col-12 col-md-4"></div>
-              <div class="col-12 col-md-4"></div>
-              <div class="col-12 col-md-4"></div>
+              <div class="col-12 col-md-4 d-flex align-items-center">
+                 <h3>Nuovo Studente</h3>
+                 <i class="fa-solid fa-plus border-2 "></i>
+              </div>
+              <div class="col-12 col-md-4">
+
+              </div>
+              <div class="col-12 col-md-4">
+
+              </div>
             </div>
           </section>
         </header>
-        <!--sezione dove ci sono le card-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--sezione dove ci sono le 4 card-->
         <section class="container">
-          <div class="row row-cols-1 row-cols-md-2">
-             <!--Card 1-->
-         <div class="col">
-               
+          <div class="row">
+            <!--Card 1 E 2-->
+            <div class="col-12 col-md-8">
               <div class="card">
                 <div class="card-header">Quote</div>
                 <div class="card-body">
@@ -131,32 +204,7 @@
                   </blockquote>
                 </div>
               </div>
-              </div>
-           
 
-            <!--Card due-->
-
-            <div class="col">
-              <div class="card">
-                <div class="card-header">Quote</div>
-                <div class="card-body">
-                  <blockquote class="blockquote mb-0">
-                    <p>
-                      A well-known quote, contained in a blockquote
-                      elementdddddddddddddddddddddddddddddddddddddddddddddddddd.
-                    </p>
-                    <footer class="blockquote-footer">
-                      Someone famous in
-                      <cite title="Source Title">Source Title</cite>
-                    </footer>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-
-            <!--card tre-->
-
-            <div class="col">
               <div class="card">
                 <div class="card-header">Quote</div>
                 <div class="card-body">
@@ -188,9 +236,25 @@
               </div>
             </div>
 
-             <!--card quattro-->
+            <!--Card 3 e 4-->
 
-            <div class="col">
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <div class="card-header">Quote</div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>
+                      A well-known quote, contained in a blockquote
+                      elementdddddddddddddddddddddddddddddddddddddddddddddddddd.
+                    </p>
+                    <footer class="blockquote-footer">
+                      Someone famous in
+                      <cite title="Source Title">Source Title</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+
               <div class="card">
                 <div class="card-header">Quote</div>
                 <div class="card-body">
@@ -208,118 +272,8 @@
               </div>
             </div>
           </div>
-         </div>
         </section>
       </section>
     </main>
-
-    <!--
-    <header>
-    <nav>
-    </nav>
-   </header>
-
-    
-    <div class="d-flex">
-
-    <aside class="d-flex flex-column justify-content-between">
-        <section ></section>
-        <section>
-            <div></div>
-            <div></div>
-           </section>
-
-  
-
-    </aside>
-
-<main >
- <div class="my_box">
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-    <h1>dfdfsfd</h1>
-
-
-  
-
- </div>
-
-</main>
-</div>-->
   </body>
 </html>

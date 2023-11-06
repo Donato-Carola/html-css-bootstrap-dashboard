@@ -53,8 +53,8 @@ i.fa-bell{
 /*CSS aside*/
 
 aside{
-    background-color: black;
-    width: 70px;
+    background-color: rgb(5, 30, 52);
+    width: 80px;
     height: calc(100vh - 80px);
     
 }
@@ -65,43 +65,45 @@ aside>section{
 }
 
 aside>section  div{
-    background-color: red;
-    height: 20px;
+    
     width: 100%;
 
 }
+
+
 
 /*CSS right box*/
 
 main>section.right-box{
     overflow: auto;
     
-    width: calc(100% - 70px);
+    width: calc(100% - 80px);
     height: calc(100vh - 80px);
 }
 
+
+/*Header del box-right principale*/
+
 section.right-box>header{
     background-color: rgb(27, 114, 232);
-    height: 250px;
-}
-
-section.right-box>header>section>div div{
-    background-color: aqua;
-    height: 45px;
-    border: 1px solid magenta;
+ 
 }
 
 
 
 
 
-@media all and (min-width:768px){
-    aside{
-        width: 110px;
-    }
+
+
+
+
+@media all and (min-width:992px){
+   aside{
+    width: 110px;
+   }
     
-    main>section.right-box{
-        width: calc(100% - 110px);
-    }
-     
+   main>section.right-box{
+    width: calc(100% - 110px);
+   }
+
 }
