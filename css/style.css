@@ -93,7 +93,11 @@ section.right-box>header{
 
 
 
-
+@media all and (min-width:0){
+    section.my_main div.my_dimensione-offcanvas{
+        width: 100%;
+       }
+}
 
 
 
@@ -104,6 +108,10 @@ section.right-box>header{
     
    main>section.right-box{
     width: calc(100% - 110px);
+   }
+
+   section.my_main div.my_dimensione-offcanvas{
+    width: 50%;
    }
 
 }
