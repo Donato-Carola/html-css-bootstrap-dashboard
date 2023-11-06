@@ -21,19 +21,19 @@
       <section>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid flex-nowrap">
-          
             <img src="" class="pe-1" alt="logo" />
-           
+
             <div class="input-group pe-1">
               <span class="input-group-text" id="basic-addon1">
                 <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
+              </span>
               <input
                 type="text"
                 class="form-control"
                 placeholder="Username"
                 aria-label="Username"
-                aria-describedby="basic-addon1"/>
+                aria-describedby="basic-addon1"
+              />
             </div>
             <i class="fa-solid fa-bell d-lg-none"></i>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,13 +53,30 @@
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active d-lg-block"
-                    aria-current="page"
-                    href="#">
-                    <i class="fa-solid fa-bell"></i>
-                  </a>
+
+                <li class="nav-item dropdown-menu-start">
+                  
+                    <button
+                      type="button"
+                      class="btn border-0 "
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="fa-solid fa-bell"></i>
+                    </button>
+                    <ul>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </ul>
+                 
                 </li>
               </ul>
             </div>
@@ -71,128 +88,123 @@
     <main class="d-flex">
       <!--Aside laterale nel main-->
       <aside class="text-white">
-        <section class="d-flex flex-column justify-content-between p-1 text-center pt-4 pb-4">
-          
-            <ul class="list-group lh-lg d-lg-none">
+        <section
+          class="d-flex flex-column justify-content-between p-1 text-center pt-4 pb-4"
+        >
+          <ul class="list-group lh-lg d-lg-none">
             <li><i class="fa-solid fa-house"></i></li>
             <li><i class="fa-solid fa-chart-simple"></i></li>
             <li><i class="fa-solid fa-signal"></i></li>
           </ul>
-          
 
-       
           <ul class="list-group d-lg-none">
             <li><i class="fa-solid fa-gear"> </i></li>
-            
           </ul>
-         
-           <!--CONTENUTO DELL'ASIDE CHE SCOMPARE CON D-LG-NONE , PURTROPPO NON RIESCO CON COLLAPSE-->
-      
-         
-            <ul class="list-group-item lh-lg d-none d-lg-block ">
-              <li class="w-100">
-                <i class="fa-solid fa-house text-start"></i> 
-                <span>Home</span>
-              </li> 
+
+          <!--CONTENUTO DELL'ASIDE CHE SCOMPARE CON D-LG-NONE , PURTROPPO NON RIESCO CON COLLAPSE-->
+
+          <ul class="list-group-item lh-lg d-none d-lg-block">
+            <li class="w-100">
+              <i class="fa-solid fa-house text-start"></i>
+              <span>Home</span>
+            </li>
             <li>
-              <i class="fa-solid fa-chart-simple text-start"></i> 
+              <i class="fa-solid fa-chart-simple text-start"></i>
               <span>Stats</span>
             </li>
             <li>
-              <i class="fa-solid fa-signal"></i> 
-             <span>Signals</span> 
+              <i class="fa-solid fa-signal"></i>
+              <span>Signals</span>
             </li>
-            </ul>
-            
-            
-          
+          </ul>
 
-         
- <!--CONTENUTO DELL'ASIDE CHE SCOMPARE CON D-LG-NONE , PURTROPPO NON RIESCO CON COLLAPSE-->
-          
+          <!--CONTENUTO DELL'ASIDE CHE SCOMPARE CON D-LG-NONE , PURTROPPO NON RIESCO CON COLLAPSE-->
+
           <ul class="list-group-item d-none d-lg-block">
             <li>
               <i class="fa-solid fa-gear"> </i>
-             <span>Admin</span>
+              <span>Admin</span>
             </li>
           </ul>
-            
-
-          
-        
-
         </section>
       </aside>
-
-
-
-
-
-
-
-
 
       <!-- sezione principale di destra -->
 
       <section class="right-box">
         <!--Header della sezione di destra-->
-        <header >
+        <header>
           <section class="container">
             <div class="row pt-5 pb-3 text-white">
-
-           <!--prima colonna -->
+              <!--prima colonna -->
 
               <div class="col-12 col-md-4 d-flex align-items-center pb-3">
-                 <h3>Nuovo Studente</h3>
-                 <div class="border border-white ms-4 p-2 rounded ">
-                 <i class="fa-solid fa-plus fa-2"></i>
-                 
+                <h3>Nuovo Studente</h3>
+                
+                <button class="border btn btn-outline-light ms-4 p-2 rounded" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <i class="fa-solid fa-plus fa-2"></i>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+               <div class="offcanvas-header">
+                <h3>Inserisci nuovo studente</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                
+              
+                 </div>
+                 <div class="offcanvas-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                 </div>
+               </div>
+              </div>
+
+              <!--seconda colonna-->
+              <div class="col-12 col-md-4">
+                <div class="d-flex align-items-center">
+                  <h2>Boolean</h2>
+                  <h6
+                    class="border-2 rounded-5 bg-black bg-opacity-25 ms-4 p-1"
+                  >
+                    Piano blaze
+                  </h6>
+                </div>
+                <div class="d-flex align-items-baseline">
+                  <p
+                    class="border-2 rounded-5 bg-black bg-opacity-25 ps-2 pe-2"
+                  >
+                    3 app
+                  </p>
+                  <i class="fa-solid fa-angles-right ms-2 me-2"></i>
+                  <p
+                    class="border-2 rounded-5 bg-black bg-opacity-25 ps-2 pe-2"
+                  >
+                    +
+                  </p>
                 </div>
               </div>
 
-           <!--seconda colonna-->  
-              <div class="col-12 col-md-4  ">
-                   <div class="d-flex align-items-center">
-                 <h2>Boolean</h2>
-                 <h6 class="border-2 rounded-5 bg-black bg-opacity-25 ms-4 p-1" >Piano blaze</h6> 
-                  </div>
-                 <div class="d-flex align-items-baseline ">
-                  <p class="border-2 rounded-5 bg-black bg-opacity-25   ps-2 pe-2 ">3 app</p>
-                  <i class="fa-solid fa-angles-right ms-2 me-2"></i>
-                  <p class="border-2 rounded-5 bg-black bg-opacity-25  ps-2 pe-2">+</p>
-                  </div>
-              </div>
-
-           <!--terza colonna-->
+              <!--terza colonna-->
               <div class="col-12 col-md-4">
-                 <p>Studenti onine negli ultimi 30 minuti</p>
-                 <h3>125</h3>
+                <p>Studenti onine negli ultimi 30 minuti</p>
+                <h3>125</h3>
               </div>
-
-
             </div>
-
-
-
           </section>
         </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <!--sezione dove ci sono le 4 card-->
         <section class="container mt-5">
@@ -201,7 +213,7 @@
             <div class="col-12 col-lg-8">
               <div class="card mb-4">
                 <div class="card-header">
-                <h3> Prossime classi</h3> 
+                  <h3>Prossime classi</h3>
                 </div>
                 <div class="card-body">
                   <blockquote class="blockquote mb-0">
@@ -209,94 +221,248 @@
                       <thead>
                         <tr>
                           <th scope="col">Nome</th>
-                          <th scope="col" class="d-none d-md-table-cell">Data Inizio</th>
-                          <th scope="col" class="d-none d-md-table-cell">ROI</th>
+                          <th scope="col" class="d-none d-md-table-cell">
+                            Data Inizio
+                          </th>
+                          <th scope="col" class="d-none d-md-table-cell">
+                            ROI
+                          </th>
                           <th scope="col">Stato</th>
                           <th scope="col">Azioni</th>
-                          
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                         
                           <td scope="row">Classe 75</td>
-                          <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                          <td class="d-none d-md-table-cell">
+                            15 Febbraio 2021
+                          </td>
                           <td class="d-none d-md-table-cell">20%</td>
-                          <td><button type="button" class="btn btn-success pt-0 pb-0 ps-2 pe-2">Done</button></td>
-                          <td><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
-                         </td>
-                          
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-success pt-0 pb-0 ps-2 pe-2"
+                            >
+                              Done
+                            </button>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td scope="row">Classe 75</td>
-                          <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                          <td class="d-none d-md-table-cell">
+                            15 Febbraio 2021
+                          </td>
                           <td class="d-none d-md-table-cell">20%</td>
-                          <td><button type="button" class="btn btn-success pt-0 pb-0 ps-2 pe-2">Done</button></td>
-                          <td><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
-                         </td>
-                          
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-success pt-0 pb-0 ps-2 pe-2"
+                            >
+                              Done
+                            </button>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td scope="row">Classe 75</td>
-                          <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                          <td class="d-none d-md-table-cell">
+                            15 Febbraio 2021
+                          </td>
                           <td class="d-none d-md-table-cell">20%</td>
-                          <td><button type="button" class="btn btn-success pt-0 pb-0 ps-2 pe-2">Done</button></td>
-                          <td><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
-                         </td>
-                          
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-success pt-0 pb-0 ps-2 pe-2"
+                            >
+                              Done
+                            </button>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td scope="row">Classe 75</td>
-                          <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                          <td class="d-none d-md-table-cell">
+                            15 Febbraio 2021
+                          </td>
                           <td class="d-none d-md-table-cell">20%</td>
-                          <td><button type="button" class="btn btn-success pt-0 pb-0 ps-2 pe-2">Done</button></td>
-                          <td><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
-                         </td>
-                          
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-success pt-0 pb-0 ps-2 pe-2"
+                            >
+                              Done
+                            </button>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td scope="row">Classe 75</td>
-                          <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                          <td class="d-none d-md-table-cell">
+                            15 Febbraio 2021
+                          </td>
                           <td class="d-none d-md-table-cell">20%</td>
-                          <td><button type="button" class="btn btn-success pt-0 pb-0 ps-2 pe-2">Done</button></td>
-                          <td><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
-                         </td>
-                          
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-success pt-0 pb-0 ps-2 pe-2"
+                            >
+                              Done
+                            </button>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td scope="row">Classe 75</td>
-                          <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                          <td class="d-none d-md-table-cell">
+                            15 Febbraio 2021
+                          </td>
                           <td class="d-none d-md-table-cell">20%</td>
-                          <td><button type="button" class="btn btn-success pt-0 pb-0 ps-2 pe-2">Done</button></td>
-                          <td><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
-                         </td>
-                          
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-success pt-0 pb-0 ps-2 pe-2"
+                            >
+                              Done
+                            </button>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td scope="row">Classe 75</td>
-                          <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                          <td class="d-none d-md-table-cell">
+                            15 Febbraio 2021
+                          </td>
                           <td class="d-none d-md-table-cell">20%</td>
-                          <td><button type="button" class="btn btn-success pt-0 pb-0 ps-2 pe-2">Done</button></td>
-                          <td><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
-                         </td>
-                          
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-success pt-0 pb-0 ps-2 pe-2"
+                            >
+                              Done
+                            </button>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td scope="row">Classe 75</td>
-                          <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                          <td class="d-none d-md-table-cell">
+                            15 Febbraio 2021
+                          </td>
                           <td class="d-none d-md-table-cell">20%</td>
-                          <td><button type="button" class="btn btn-success pt-0 pb-0 ps-2 pe-2">Done</button></td>
-                          <td><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
-                         </td>
-                          
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-success pt-0 pb-0 ps-2 pe-2"
+                            >
+                              Done
+                            </button>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -310,50 +476,60 @@
                 </div>
                 <div class="card-body">
                   <blockquote class="blockquote mb-0">
-                    <button class="btn  d-flex justify-content-between align-items-baseline w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-
-                    <p>
-                     Come aggiungere un nuovo studente? 
-                    </p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                   </button>
-                   <div class="collapse " id="collapseExample">
-                    <div class="card card-body border-0">
-                      clicca sul + in alto nella sezione blu
+                    <button
+                      class="btn d-flex justify-content-between align-items-baseline w-100"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <p>Come aggiungere un nuovo studente?</p>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body border-0">
+                        clicca sul + in alto nella sezione blu
+                      </div>
                     </div>
-                 
 
-                   </div>
-
-                   <button class="btn border-info   d-flex justify-content-between align-items-baseline w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-
-                    <p>
-                     Come posso accedere alle informazioni del mio account? 
-                    </p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                   </button>
-                   <div class="collapse " id="collapseExample1">
-                    <div class="card card-body border-0">
-                    clicca sull'icona della campanella
+                    <button
+                      class="btn border-info d-flex justify-content-between align-items-baseline w-100"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample1"
+                      aria-expanded="false"
+                      aria-controls="collapseExample1"
+                    >
+                      <p>
+                        Come posso accedere alle informazioni del mio account?
+                      </p>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="collapse" id="collapseExample1">
+                      <div class="card card-body border-0">
+                        clicca sull'icona della campanella
+                      </div>
                     </div>
-                 
 
-                   </div>
-
-                   <button class="btn  d-flex justify-content-between align-items-baseline w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-
-                    <p>
-                     posso usare questa dashboard da mobile? 
-                    </p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                   </button>
-                   <div class="collapse " id="collapseExample2">
-                    <div class="card card-body border-0">
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    <button
+                      class="btn d-flex justify-content-between align-items-baseline w-100"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample2"
+                      aria-expanded="false"
+                      aria-controls="collapseExample2"
+                    >
+                      <p>posso usare questa dashboard da mobile?</p>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="collapse" id="collapseExample2">
+                      <div class="card card-body border-0">
+                        Some placeholder content for the collapse component.
+                        This panel is hidden by default but revealed when the
+                        user activates the relevant trigger.
+                      </div>
                     </div>
-                 
-
-                   </div>
                   </blockquote>
                 </div>
               </div>
@@ -370,27 +546,60 @@
                   <blockquote class="blockquote mb-0">
                     <ul class="list-group">
                       <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
-                        <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
+                        <input
+                          class="form-check-input me-1"
+                          type="checkbox"
+                          value=""
+                          id="firstCheckboxStretched"
+                        />
+                        <label
+                          class="form-check-label stretched-link"
+                          for="firstCheckboxStretched"
+                          >First checkbox</label
+                        >
                       </li>
                       <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
-                        <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>
+                        <input
+                          class="form-check-input me-1"
+                          type="checkbox"
+                          value=""
+                          id="secondCheckboxStretched"
+                        />
+                        <label
+                          class="form-check-label stretched-link"
+                          for="secondCheckboxStretched"
+                          >Second checkbox</label
+                        >
                       </li>
                       <li class="list-group-item">
-                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
-                        <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>
+                        <input
+                          class="form-check-input me-1"
+                          type="checkbox"
+                          value=""
+                          id="thirdCheckboxStretched"
+                        />
+                        <label
+                          class="form-check-label stretched-link"
+                          for="thirdCheckboxStretched"
+                          >Third checkbox</label
+                        >
                       </li>
                     </ul>
                   </blockquote>
                 </div>
               </div>
 
-              <div class="card" >
-                <img src="img/stats.jpeg" class="card-img-top" alt="immagine grafico">
+              <div class="card">
+                <img
+                  src="img/stats.jpeg"
+                  class="card-img-top"
+                  alt="immagine grafico"
+                />
                 <div class="card-body">
                   <h5 class="card-title">Utenti attivi</h5>
-                  <p class="card-text">lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                  <p class="card-text">
+                    lista degli utenti attivi in piattaforma nell'ultimo mese
+                  </p>
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">Gennaio:1200</li>
@@ -398,8 +607,9 @@
                   <li class="list-group-item">Marzo:1500</li>
                 </ul>
                 <div class="card-body">
-                  <a href="#" class="card-link">Visualizza report approfondito</a>
-                  
+                  <a href="#" class="card-link"
+                    >Visualizza report approfondito</a
+                  >
                 </div>
               </div>
             </div>
@@ -407,6 +617,10 @@
         </section>
       </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
