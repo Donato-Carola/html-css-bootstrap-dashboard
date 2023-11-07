@@ -21,8 +21,12 @@
       <section>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid flex-nowrap">
-            <img src="img/logo.svg" class=" pe-1 d-none d-lg-block " alt="logo" />
-            <img src="img/mobile-logo.png" class=" pe-1 d-sm-block d-lg-none my_img-logomobile" alt="logo-mobile">
+            <img src="img/logo.svg" class="pe-1 d-none d-lg-block" alt="logo" />
+            <img
+              src="img/mobile-logo.png"
+              class="pe-1 d-sm-block d-lg-none my_img-logomobile"
+              alt="logo-mobile"
+            />
 
             <div class="input-group pe-1">
               <span class="input-group-text" id="basic-addon1">
@@ -64,20 +68,17 @@
                   >
                     <i class="fa-solid fa-bell"></i>
                   </button>
-                
-                    <ul class="dropdown-menu ">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
                     </li>
-                
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
@@ -136,10 +137,11 @@
         <header>
           <section class="container-fluid my_main">
             <div class="row pt-5 pb-3 text-white">
-
               <!--prima colonna -->
 
-              <div class="col-12 col-md-4 d-flex align-items-center pb-3 order-md-3">
+              <div
+                class="col-12 col-md-4 d-flex align-items-center pb-3 order-md-3"
+              >
                 <h3>Nuovo Studente</h3>
 
                 <button
@@ -151,7 +153,7 @@
                 >
                   <i class="fa-solid fa-plus fa-2"></i>
                 </button>
-               <!-- <div
+                <!-- <div
                   class="offcanvas offcanvas-end "
                   tabindex="-1"
                   id="offcanvasRight"
@@ -275,109 +277,181 @@
                 <h3>125</h3>
               </div>
             </div>
-         
-       <!--offcanvas inserire studente-->
+
+            <!--offcanvas inserire studente-->
 
             <div
-                  class="offcanvas offcanvas-end  my_dimensione-offcanvas "
-                  tabindex="-1"
-                  id="offcanvasRight"
-                  aria-labelledby="offcanvasRightLabel"
-                >
-                  <div class="offcanvas-header">
-                    <h3>Inserisci nuovo studente</h3>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    <form>
-                      <div class="row">
-                        <div class="col-6">
-                          <div class="mb-3">
-                            
-                            <label for="exampleInputEmail1" class="form-label">
-                              Nome
-                            </label>
-                            <input
-                              type="email"
-                              class="form-control"
-                              id="exampleInputEmail1"
-                              aria-describedby="emailHelp"/>
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="mb-3">
-                            <label
-                              for="exampleInputPassword1"
-                              class="form-label">
-                              Cognome</label>
-                            <input
-                              type="password"
-                              class="form-control"
-                              id="exampleInputPassword1"/>
-                          </div>
-                        </div>
-
-                        <div class="col-6">
-                          <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">
-                              Email
-                            </label>
-                            <input
-                              type="email"
-                              class="form-control"
-                              id="exampleInputEmail1"
-                              aria-describedby="emailHelp"/>
-                          </div>
-                        </div>
-
-                        <div class="col-6">
-
-                          <div class="mb-3">
-                            
-                            <label class="form-label">
-                              Password</label>
-                              <div class="input-group">
-                                <span class="input-group-text" id="basic-addon3">@</span>
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
-                              </div>
-                            </div>
-                            </div>
-                            
-                           <div class="col-12">
-                              <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">
-                                  Indirizzo
-                                </label>
-                                <input
-                                  type="email"
-                                  class="form-control"
-                                  id="exampleInputEmail1"
-                                  aria-describedby="emailHelp"/>
-                              </div>
-                            </div>
-    
-
-                          
-                          
-                        
+              class="offcanvas offcanvas-end my_dimensione-offcanvas"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header">
+                <h3>Inserisci nuovo studente</h3>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <form>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">
+                          Nome
+                        </label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
                       </div>
-                    </form>
+                    </div>
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">
+                          Cognome</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label class="form-label"> Email</label>
+                        <div class="input-group">
+                          <span class="input-group-text" id="basic-addon3"
+                            >@</span
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="basic-url"
+                            aria-describedby="basic-addon3 basic-addon4"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">
+                          Password
+                        </label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">
+                          Indirizzo
+                        </label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">
+                          Città
+                        </label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-4">
+                      <div class="dropdown">
+                        <label for="exampleInputEmail1" class="form-label">
+                          Stato
+                        </label>
+                        <button
+                          class="btn dropdown-toggle form-control border-light-subtle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Scegli...
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="col-2">
+                      <div class="mb-3">
+                        <label
+                          for="exampleInputEmail1"
+                          class="form-label text-uppercase"
+                        >
+                          Cap
+                        </label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="mb-4">
+                        <label for="formFile" class="form-label">Foto</label>
+                        <input class="form-control" type="file" id="formFile">
+                      </div>
+                    </div>
+                      
+                    <div class="col 4 mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Seleziona per proseguire
+                      </label>
+                    </div>
+                   </div>
+
                   </div>
-                </div>
-            
+                    <!--Due bottoni finali Salva(blu) e Svuota(giallo)-->
+                    
+                       <button class="btn btn-primary">Salva</button>
+                  
+                   
+                       <button class="btn btn-warning">Svuota</button>
+
+                  
+                </form>
+              </div>
+            </div>
           </section>
         </header>
 
         <!--sezione dove ci sono le 4 card-->
         <section class="container-fluid mt-5">
           <div class="row">
-
-            <!--Card 1 E 2-->               <!--TABELLA-->
+            <!--Card 1 E 2-->
+            <!--TABELLA-->
             <div class="col-12 col-lg-8">
               <div class="card mb-4">
                 <div class="card-header">
@@ -401,7 +475,13 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td scope="row"><img src="img/class-avatar.jpg" class="my_logo-table pe-1" alt="">Classe 75</td>
+                          <td scope="row">
+                            <img
+                              src="img/class-avatar.jpg"
+                              class="my_logo-table pe-1"
+                              alt=""
+                            />Classe 75
+                          </td>
                           <td class="d-none d-md-table-cell">
                             15 Febbraio 2021
                           </td>
@@ -430,7 +510,13 @@
                           </td>
                         </tr>
                         <tr>
-                          <td scope="row"><img src="img/class-avatar.jpg" class="my_logo-table pe-1" alt="">Classe 75</td>
+                          <td scope="row">
+                            <img
+                              src="img/class-avatar.jpg"
+                              class="my_logo-table pe-1"
+                              alt=""
+                            />Classe 75
+                          </td>
                           <td class="d-none d-md-table-cell">
                             15 Febbraio 2021
                           </td>
@@ -459,7 +545,13 @@
                           </td>
                         </tr>
                         <tr>
-                          <td scope="row"><img src="img/class-avatar.jpg" class="my_logo-table pe-1" alt="">Classe 75</td>
+                          <td scope="row">
+                            <img
+                              src="img/class-avatar.jpg"
+                              class="my_logo-table pe-1"
+                              alt=""
+                            />Classe 75
+                          </td>
                           <td class="d-none d-md-table-cell">
                             15 Febbraio 2021
                           </td>
@@ -488,7 +580,13 @@
                           </td>
                         </tr>
                         <tr>
-                          <td scope="row"><img src="img/class-avatar.jpg" class="my_logo-table pe-1" alt="">Classe 75</td>
+                          <td scope="row">
+                            <img
+                              src="img/class-avatar.jpg"
+                              class="my_logo-table pe-1"
+                              alt=""
+                            />Classe 75
+                          </td>
                           <td class="d-none d-md-table-cell">
                             15 Febbraio 2021
                           </td>
@@ -517,7 +615,13 @@
                           </td>
                         </tr>
                         <tr>
-                          <td scope="row"><img src="img/class-avatar.jpg" class="my_logo-table pe-1" alt="">Classe 75</td>
+                          <td scope="row">
+                            <img
+                              src="img/class-avatar.jpg"
+                              class="my_logo-table pe-1"
+                              alt=""
+                            />Classe 75
+                          </td>
                           <td class="d-none d-md-table-cell">
                             15 Febbraio 2021
                           </td>
@@ -546,7 +650,13 @@
                           </td>
                         </tr>
                         <tr>
-                          <td scope="row"><img src="img/class-avatar.jpg" class="my_logo-table pe-1" alt="">Classe 75</td>
+                          <td scope="row">
+                            <img
+                              src="img/class-avatar.jpg"
+                              class="my_logo-table pe-1"
+                              alt=""
+                            />Classe 75
+                          </td>
                           <td class="d-none d-md-table-cell">
                             15 Febbraio 2021
                           </td>
@@ -575,7 +685,13 @@
                           </td>
                         </tr>
                         <tr>
-                          <td scope="row"><img src="img/class-avatar.jpg" class="my_logo-table pe-1" alt="">Classe 75</td>
+                          <td scope="row">
+                            <img
+                              src="img/class-avatar.jpg"
+                              class="my_logo-table pe-1"
+                              alt=""
+                            />Classe 75
+                          </td>
                           <td class="d-none d-md-table-cell">
                             15 Febbraio 2021
                           </td>
@@ -604,7 +720,13 @@
                           </td>
                         </tr>
                         <tr>
-                          <td scope="row"><img src="img/class-avatar.jpg" class="my_logo-table pe-1" alt="">Classe 75</td>
+                          <td scope="row">
+                            <img
+                              src="img/class-avatar.jpg"
+                              class="my_logo-table pe-1"
+                              alt=""
+                            />Classe 75
+                          </td>
                           <td class="d-none d-md-table-cell">
                             15 Febbraio 2021
                           </td>
@@ -638,7 +760,7 @@
                 </div>
               </div>
 
-                            <!--LISTA A SCOMPARSA-->
+              <!--LISTA A SCOMPARSA-->
               <div class="card mb-sm-4">
                 <div class="card-header">
                   <h3 class="text-uppercase">f.a.q</h3>
