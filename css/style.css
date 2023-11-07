@@ -49,15 +49,27 @@ header>section>nav>div>img.my_img-logomobile{
     height: 50px;
 }
 
+header>section>nav>div ul.my_ul{
+    list-style: none;
+    
+}
+
 i.fa-bell{
     color: rgb(255, 143, 0);
     
 }
 
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-    right: 0;
-    left: 85%;
+header>section>nav>div.link>ul>li>ul.my_regole-first-bell{
+    
+     left:auto;
+     right: 0;
 }
+
+div.collegamento>ul>li>ul.position_dropdown{
+    left: auto;
+    right: 0;
+}
+
 
 
 
